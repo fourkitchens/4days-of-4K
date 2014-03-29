@@ -12,6 +12,12 @@ p {
   font-size: 1.2rem;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Whitney A', 'Whitney B';
+  font-weight: 600;
+  font-style: normal;
+}
+
 .header {
   background: url(img/funfunfun.jpg) repeat;
 }
