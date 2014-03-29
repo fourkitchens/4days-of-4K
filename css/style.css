@@ -1,5 +1,31 @@
 /* Custom style */
 
+/* Colors
+green        #35AA4E
+light green  #3FD03F
+dark green   #2B8A31
+
+blue         #4180C7
+light blue   #68A2E3
+medium blue  #0C62C2
+
+orange       #FD880B
+dark orange  #D86601
+
+yellow       #ECDF13
+dark yellow  #D8CB01
+
+white        #FFFFFF
+light gray   #D2D2D2
+medium gray  #A0A0A0
+dark gray    #414141
+gray noise   #F1F1F1
+
+black        #000000
+green-border #78DC8D
+blue-border  #68A2E3
+*/
+
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
 
 body,
