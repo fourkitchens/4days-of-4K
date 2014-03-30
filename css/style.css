@@ -26,22 +26,31 @@ green-border #78DC8D
 blue-border  #68A2E3
 */
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic);
 
-body,
-button,
-.button {
-  font-family: 'Source Sans Pro', sans-serif;
+body {
+  font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;
 }
 
 p {
   font-size: 1.2rem;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4,
+.button {
   font-family: 'Whitney A', 'Whitney B';
   font-weight: 600;
   font-style: normal;
+}
+
+a.button {
+  color: white;
+  text-transform: uppercase;
+  background-color: #0C62C2;
+}
+
+a.button:hover {
+  background-color: #3067a5;
 }
 
 .header {
@@ -55,8 +64,8 @@ h1, h2, h3, h4 {
 .days {
   background: #302030;
   color: white;
-  padding: 20px;
-  }
+  padding: 1.5em 0;
+}
 
 .days h2 {
   color: white;
@@ -66,48 +75,40 @@ h1, h2, h3, h4 {
   color: white;
 }
 
-.days-alt {
+.days.alt {
   background: #52A964;
   color: white;
-  padding: 20px;
 }
 
-.days-alt h2 {
+.days.alt h2 {
   color: white;
 }
 
-.days-alt h3 {
+.days.alt h3 {
   color: white;
 }
 
-.days-alt a {
-  color: #0b62c2;
+.days.alt p a {
+  color: #0C62C2;
 }
 
-.days-alt a:hover {
-  color: #0b6b8b;
+.days.alt p a:hover {
+  color: #3067a5;
 }
 
-.days-alt a.medium.button {
-  color: white;
-} 
+.panel,
+.panel.callout {
+  border: none;
+}
 
 .recommends {
   background: url(img/stevie.jpg);
-  padding: 10px;
+  padding: 1em;
 }
 
 .recommends h2 {
   color: white;
   padding-left: 15px;
-}
-
-h1 a {
-  color: white;
-}
-
-h1 a:hover {
-  color: white;
 }
 
 footer {
@@ -118,6 +119,6 @@ footer {
 }
 
 footer p {
-  font-size: 12px;
+  font-size: .9rem;
   text-align: center;
 }
