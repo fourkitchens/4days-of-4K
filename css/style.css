@@ -30,6 +30,7 @@ blue-border  #68A2E3
 
 body {
   font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;
+  background-color: #D2D2D2;
 }
 
 p {
@@ -61,12 +62,13 @@ a.button:hover {
   background-color: #D86601;
 }
 
-.header {
-  background: url(img/funfunfun.jpg) repeat;
+header {
+  background: url(/img/funfunfun.jpg) repeat;
 }
 
-.header h1 {
-  color: white;
+header h1,
+header h1 a {
+  color: white!important;
 }
 
 .days {
@@ -114,7 +116,7 @@ a.button:hover {
 }
 
 .recommends {
-  background: url(img/stevie.jpg);
+  background: url(/img/stevie.jpg);
   padding: 1em;
 }
 
@@ -122,6 +124,14 @@ a.button:hover {
   color: white;
   padding-left: 15px;
 }
+
+/* Mailing list page */
+
+.mailing-list main {
+  background-color: #FD880B;
+}
+
+/* Footer */
 
 footer {
   background: #D2D2D2;
