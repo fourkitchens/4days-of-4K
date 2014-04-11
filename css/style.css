@@ -98,14 +98,6 @@ header h1 a {
   color: #414141;
 }
 
-.days.alt p a {
-  color: #FD880B;
-}
-
-.days.alt p a:hover {
-  color: #FD880B;
-}
-
 .days.alt hr {
   border-color: #414141;
 }
