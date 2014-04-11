@@ -1,0 +1,6 @@
+name: 4 days of 4K
+permalink: pretty
+debug: false
+
+markdown: redcarpet
+exclude: [CONTRIBUTING.md, README.md, config.rb, package.json, Gruntfile.js, node_modules, "vendor"]

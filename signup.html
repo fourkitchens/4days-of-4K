@@ -1,51 +1,38 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>#4DaysOf4K @ DrupalCon Austin</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7738032/689024/css/fonts.css" />
-    <script src="js/vendor/modernizr.js"></script>
-  </head>
-  <body>
+---
+layout: default
+title: "Sign up | #4DaysOf4K @ DrupalCon Austin"
+permalink: /signup/
+bodyclass: mailing-list
+---
 
- <div class="header">  
-      <div class="row">
-        <div class="large-12 columns">
-          <h1><a href="index.html">#4DaysOf4K</a></h1>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="large-12 columns">
-            <div class="panel">
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
 
 <!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup">
 <form action="http://fourkitchens.us2.list-manage.com/subscribe/post?u=a69fca90d904cf3933c9776c3&amp;id=69fee8b9b6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<h2>Subscribe to our mailing list</h2>
+  <h2>Subscribe to our mailing list</h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 </label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
 </div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">First Name </label>
-	<input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+  <label for="mce-FNAME">First Name </label>
+  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
 </div>
 <div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+  <label for="mce-LNAME">Last Name </label>
+  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
 </div>
-	<div id="mce-responses" class="clear">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_a69fca90d904cf3933c9776c3_69fee8b9b6" value=""></div>
-	<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 </form>
 </div>
 <script type="text/javascript">
@@ -133,17 +120,17 @@ function mce_init_form(){
                                             bday = true;
                                             fields[2] = {'value':1970};//trick birthdays into having years
                                         }
-                                    	if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
-                                    		this.value = '';
-									    } else {
-									        if (/\[day\]/.test(fields[0].name)){
-    	                                        this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;									        
-									        } else {
-    	                                        this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
-	                                        }
-	                                    }
+                                      if ( fields[0].value=='MM' && fields[1].value=='DD' && (fields[2].value=='YYYY' || (bday && fields[2].value==1970) ) ){
+                                        this.value = '';
+                      } else if ( fields[0].value=='' && fields[1].value=='' && (fields[2].value=='' || (bday && fields[2].value==1970) ) ){
+                                        this.value = '';
+                      } else {
+                          if (/\[day\]/.test(fields[0].name)){
+                                              this.value = fields[1].value+'/'+fields[0].value+'/'+fields[2].value;                         
+                          } else {
+                                              this.value = fields[0].value+'/'+fields[1].value+'/'+fields[2].value;
+                                          }
+                                      }
                                     });
                             });
                         $('.phonefield-us','#mc_embed_signup').each(
@@ -158,10 +145,10 @@ function mce_init_form(){
                                 $(':hidden', this).each(
                                     function(){
                                         if ( fields[0].value.length != 3 || fields[1].value.length!=3 || fields[2].value.length!=4 ){
-                                    		this.value = '';
-									    } else {
-									        this.value = 'filled';
-	                                    }
+                                        this.value = '';
+                      } else {
+                          this.value = 'filled';
+                                      }
                                     });
                             });
                         return mce_validator.form();
@@ -181,7 +168,7 @@ function mce_success_cb(resp){
         $('#mce-'+resp.result+'-response').html(resp.msg);
         $('#mc-embedded-subscribe-form').each(function(){
             this.reset();
-    	});
+      });
     } else {
         var index = -1;
         var msg;
@@ -244,20 +231,3 @@ function mce_success_cb(resp){
         </div>
       </div>
 </div>
-
-<footer>
-  <div class="row">
-    <div class="large-12 columns">
-      <p>#DaysOf4K</p>
-      <p>Built with &#10084; by <a href="http://fourkitchens.com">Four Kitchens</a> in Austin, TX.</p>
-      <p>Photo credits: Franklin BBQ, <a href="https://www.flickr.com/photos/wallyg">wallyg</a> on Flickr, <a href="http://www.flickr.com/photos/austins_only_paper/">That Other Paper</a>.</p>
-  </div>
-</footer>
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-  </body>
-</html>
