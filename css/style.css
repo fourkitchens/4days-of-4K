@@ -43,14 +43,22 @@ h1, h2, h3, h4,
   font-style: normal;
 }
 
+a {
+  color: #FD880B;
+}
+
+a:hover {
+  color: #D86601;
+}
+
 a.button {
   color: white;
   text-transform: uppercase;
-  background-color: #0C62C2;
+  background-color: #FD880B;
 }
 
 a.button:hover {
-  background-color: #3067a5;
+  background-color: #D86601;
 }
 
 .header {
@@ -62,7 +70,7 @@ a.button:hover {
 }
 
 .days {
-  background: #302030;
+  background: #414141;
   color: white;
   padding: 1.5em 0;
 }
@@ -76,24 +84,28 @@ a.button:hover {
 }
 
 .days.alt {
-  background: #52A964;
-  color: white;
+  background: #ECDF13;
+  color: #414141;
 }
 
 .days.alt h2 {
-  color: white;
+  color: #414141;
 }
 
 .days.alt h3 {
-  color: white;
+  color: #414141;
 }
 
 .days.alt p a {
-  color: #0C62C2;
+  color: #FD880B;
 }
 
 .days.alt p a:hover {
-  color: #3067a5;
+  color: #FD880B;
+}
+
+.days.alt hr {
+  border-color: #414141;
 }
 
 .panel,
@@ -112,10 +124,11 @@ a.button:hover {
 }
 
 footer {
-  background: #2C4448;
+  background: #D2D2D2;
   padding: 20px;
   margin: 0 auto;
-  color: white;
+  color: #414141;
+  border-top: 3px #414141 solid;
 }
 
 footer p {
