@@ -45,25 +45,31 @@ h1, h2, h3, h4,
 }
 
 a {
-  color: #FD880B;
+  color: #4180C7;
 }
 
-a:hover {
-  color: #D86601;
+a:hover, a:visited {
+  color: #0C62C2;
 }
 
 a.button {
   color: white;
   text-transform: uppercase;
-  background-color: #FD880B;
+  background-color: #4180C7;
 }
 
 a.button:hover {
+  background-color: #0C62C2;
+}
+
+a.button.orange,
+a.button.orange:hover {
   background-color: #D86601;
 }
 
 header {
-  background: url(/img/funfunfun.jpg) repeat;
+  background: url(/img/funfunfun.jpg) top left;
+  background-size: cover;
 }
 
 header h1,
@@ -71,35 +77,34 @@ header h1 a {
   color: white!important;
 }
 
+.row.with-panel {
+  padding-top: 1.25rem;
+}
+
 .days {
-  background: #414141;
-  color: white;
+  background: white;
+  color: #414141;
   padding: 1.5em 0;
 }
 
 .days h2 {
-  color: white;
+  color: #414141;
 }
 
 .days h3 {
-  color: white;
+  color: #35AA4E;
 }
 
 .days.alt {
-  background: #ECDF13;
-  color: #414141;
-}
-
-.days.alt h2 {
-  color: #414141;
-}
-
-.days.alt h3 {
-  color: #414141;
+  background: #F8FFF2;
 }
 
 .days.alt hr {
-  border-color: #414141;
+  border-color: #A0A0A0;
+}
+
+.panel {
+  background: rgba(245,245,245,.8);
 }
 
 .panel,
@@ -109,6 +114,7 @@ header h1 a {
 
 .recommends {
   background: url(/img/stevie.jpg);
+  background-size: cover;
   padding: 1em;
 }
 
