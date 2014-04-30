@@ -30,7 +30,7 @@ blue-border  #68A2E3
 
 body {
   font-family: 'Merriweather', Georgia, Times, "Times New Roman", serif;
-  background-color: #D2D2D2;
+  background-color: white;
 }
 
 p {
@@ -128,6 +128,21 @@ header h1 a {
 .mailing-list main {
   background-color: #FD880B;
 }
+
+/* Recommends page */
+
+#map.row {
+  max-width: 90%;
+  margin-bottom: 3rem;
+}
+
+@media only screen 
+and (min-width : 768px) {
+  #map.row {
+    max-width: none;
+  }
+}
+
 
 /* Footer */
 
